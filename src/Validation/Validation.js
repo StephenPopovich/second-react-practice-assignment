@@ -6,11 +6,19 @@ import React from 'react';
 const validation = (props) => {
 
   // Return some JSX to make it a valid component
+  //Turnary expression that checks inputLength character length if greater than 5 outputs "Text long enough". If not, outputs "Text too short"
    return (
       <div>
-         <p>Text too short</p>
+      {
+        props.inputLength > 5 ?
+
+        <p>Text long enough</p>:
+
+        <p>Text too short</p>
+      }
+
       </div>
    );
 };
 
-export default vaildation;
+export default validation;

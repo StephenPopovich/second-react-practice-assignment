@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Validation from '.Valdiation/Validation';
+import Validation from './Validation/Validation';
 
 // Assignment Instructions:
 // 1. Create an input field (in App component) with a change listener which outputs the length of the entered text below (e.g. in a pargraph).
@@ -17,7 +17,7 @@ import Validation from '.Valdiation/Validation';
 class App extends Component {
   // state property
    state = {
-      userInput: 'Text here'
+      userInput: ''
    }
 
   // a method to change input data passing an event object and stored in state

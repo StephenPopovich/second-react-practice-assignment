@@ -14,7 +14,15 @@ import './App.css';
 // *** LAST LEFT ON TIME STAMP , # ****
 
 class App extends Component {
+  // state property
+   state = {
+      userInput: 'Text here'
+   }
 
+  // a method to change input data passing an event object and stored in state
+   inputChangeHandler = (event) => {
+     this.setState({userInput: event.target.value});
+   }
 
   render() {
     return (
@@ -28,8 +36,19 @@ class App extends Component {
             <li>Render a list of CharComponent where each CharComponent receives a different eltter of the entereed test (in the initial input fild) as a prop.</li>
             <li>When you click a CharComponent, it should be removed from the enetered text.</li>
             <p><i>Hint: Keep in mind that JavaScript strings are basically arrays!</i></p>
-
           </ol>
+
+            <hr />
+
+
+
+        <p><i>Input field in App component with a change listener with two way binding:</i></p>
+        <input type="text"
+          onChange={this.inputChangeHandler}
+          value={this.state.userInput}/>
+
+        <p><i>Input field in App component with a change listener with two way binding:</i></p>
+        <p>{this.state.userInput}</p>
 
       </div>
     );

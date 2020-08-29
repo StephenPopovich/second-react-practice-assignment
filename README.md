@@ -1,4 +1,4 @@
-Stephen Popovich's first react practice assignment.
+Stephen Popovich's second react practice assignment.
 
 Assignment Instructions:
 // 1. Create an input field (in App component) with a change listener which outputs the length of the entered text below (e.g. in a pargraph).

@@ -16,9 +16,9 @@ const char = (props) => {
 // Pass the event-handler method reference to the UserInput component and bind it to the input-change event
   return (
   <div
-    style={style}>
+    style={style} onClick={props.clicked}>
     {props.character}
-    </div>
+  </div>
   );
 };
 
